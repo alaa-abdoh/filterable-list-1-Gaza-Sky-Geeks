@@ -16,5 +16,19 @@ buttons.forEach((btn)=>{
 })
 
 function displayProducts(products){
-    // Handle the case of show products in the page
+    const container= document.querySelector(".products .container")
+    container.textContent=""
+    products.map((product)=>{
+        const div= document.createElement("div");
+        const category= document.createElement("h3");
+        const name= document.createElement("h4");
+        const price= document.createElement("span");
+        div.classList.add("product");
+        category.textContent= product.category;
+        name.textContent= product.name;
+        price.textContent= product.price;
+        div.append(category, name, price);
+        container.append(div)
+    })
 }
+displayProducts(products)
