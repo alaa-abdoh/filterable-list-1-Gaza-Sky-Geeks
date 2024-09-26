@@ -110,3 +110,25 @@ header .container button{
 header .container button:hover{
     background-color: var(--main-color-alt);
 }
+.landing{
+    height: calc(100vh - 59px);
+    background-image: url("../images/landing.jpg");
+    background-size: cover;
+}
+.landing .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 150px;
+}
+.landing .container .text{
+    flex-basis: 400px;
+}
+.landing .container .text h1{
+    color: var(--main-color);
+    font-size: 40px;
+}
+.landing .container .text p{
+    color: white;
+    font-size: 15px;
+}
