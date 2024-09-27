@@ -1,9 +1,6 @@
 :root{
     --main-color:#2196f3;
     --main-color-alt:#1787e0;
-    --section-padding:100px;
-    --transition-duration:0.3s;
-    --section-background:#ececec;
 }
 *{
     -moz-box-sizing: border-box;

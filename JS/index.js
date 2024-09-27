@@ -34,3 +34,10 @@ function displayProducts(products){
     })
 }
 displayProducts(products)
+
+function changeTheme(){
+    document.querySelector("body").classList.toggle("darkMode")
+}
+
+const changeThemeBTN= document.getElementById("themeToggle");
+changeThemeBTN.onclick=changeTheme;
