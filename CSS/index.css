@@ -46,6 +46,7 @@ a{
 header{
     width: 100%;
     box-shadow: 0 0 10px var(--main-color);
+    padding: 10px 0;
 }
 header .container{
     display: flex;
@@ -57,6 +58,10 @@ header .container h3{
 }
 header .container h3:hover{
     color: var(--main-color-alt);
+}
+header .container nav{
+    display: flex;
+    align-items: center;
 }
 header .container nav a{
     display: inline-block;
@@ -109,7 +114,7 @@ header .container button:hover{
     background-color: var(--main-color-alt);
 }
 .landing{
-    height: calc(100vh - 59px);
+    height: calc(100vh - 70px);
     background-image: url("../images/landing.jpg");
     background-size: cover;
 }
