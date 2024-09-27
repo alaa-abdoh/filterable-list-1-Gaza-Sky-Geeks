@@ -156,3 +156,42 @@ header .container button:hover{
     background-color: var(--main-color);
     color: white;
 }
+.products{
+    padding: 50px 0;
+}
+.products .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+    gap: 20px;
+}
+.products .product{
+    border: 1px solid var(--main-color);
+    text-align: center;
+    padding: 20px 0;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+}
+.products .product::before{
+    content: "";
+    position: absolute;
+    left:-100%;
+    top:0;
+    height: 100%;
+    width: 100%;
+    background-color: #eee;
+    transition: 0.3s linear all;
+    z-index: -1;
+}
+.products .product:hover:before{
+    left: 0;
+}
+.products .product h3{
+    color: var(--main-color);
+    text-transform: capitalize;
+}
+.products .product img{
+    width: 200px;
+    height: 200px;
+    border-radius: 12px;
+}

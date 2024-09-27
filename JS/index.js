@@ -27,7 +27,7 @@ function displayProducts(products){
         div.classList.add("product");
         category.textContent= product.category;
         name.textContent= product.name;
-        price.textContent= product.price;
+        price.append(document.createTextNode("$ "), product.price)
         img.src=product.image
         div.append(img, category, name, price);
         container.append(div)
